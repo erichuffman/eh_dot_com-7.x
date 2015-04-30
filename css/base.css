@@ -1085,25 +1085,26 @@ p .beefy-button.orange:active {
 /* line 137, ../scss/partials/components/_menus.scss */
 .utility-menu {
   list-style: none;
+  padding: 0;
   text-align: center;
 }
-/* line 140, ../scss/partials/components/_menus.scss */
+/* line 141, ../scss/partials/components/_menus.scss */
 .utility-menu__jump-link {
   display: inline-block;
   margin: 0 5px;
   position: relative;
   text-align: center;
 }
-/* line 145, ../scss/partials/components/_menus.scss */
+/* line 146, ../scss/partials/components/_menus.scss */
 .utility-menu__jump-link.bk-to-top {
   font-size: .95em;
   padding: 60px 0 0;
 }
-/* line 151, ../scss/partials/components/_menus.scss */
+/* line 152, ../scss/partials/components/_menus.scss */
 .utility-menu__jump-link a {
   text-transform: uppercase;
 }
-/* line 153, ../scss/partials/components/_menus.scss */
+/* line 154, ../scss/partials/components/_menus.scss */
 .utility-menu__jump-link a:before {
   color: #b7b7b7;
   content: "";
@@ -1115,7 +1116,7 @@ p .beefy-button.orange:active {
   bottom: 10px;
   width: 100%;
 }
-/* line 161, ../scss/partials/components/_menus.scss */
+/* line 162, ../scss/partials/components/_menus.scss */
 .utility-menu__jump-link a:link, .utility-menu__jump-link a:visited, .utility-menu__jump-link a:hover, .utility-menu__jump-link a:active {
   color: #b7b7b7;
 }
