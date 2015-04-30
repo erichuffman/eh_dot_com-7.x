@@ -132,3 +132,35 @@
     &.drupal a:after { @include fa-insert($light_gray, $fa-var-drupal, absolute) }
   }
 }
+
+/* Utility menus */
+.utility-menu {
+  list-style: none;
+  text-align: center;
+  &__jump-link {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    &.bk-to-top {
+      font-size: .95em;
+      padding: 60px 0 0;
+    
+    }
+  }
+  &__jump-link a {
+    text-transform: uppercase;
+    &:before {
+      @include fa-insert($light_gray, $fa-var-angle-up, absolute) {
+        font-size: 2em;
+        font-weight: bold;
+        bottom: 10px;
+        width: 100%;
+      }
+    }
+    &:link, &:visited,
+    &:hover, &:active { color: $light_gray; }
+  }
+}
+
+

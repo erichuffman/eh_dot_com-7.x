@@ -845,15 +845,13 @@ p .beefy-button.orange:active {
 }
 
 /* Footer */
-@media only screen and (min-width: 37.5em) {
-  /* line 78, ../scss/partials/components/_page.scss */
-  .structure__footer {
-    padding-bottom: 600px;
-  }
+/* line 78, ../scss/partials/components/_page.scss */
+.structure__footer {
+  position: relative;
 }
 
 /* Front Page specific styling */
-/* line 87, ../scss/partials/components/_page.scss */
+/* line 82, ../scss/partials/components/_page.scss */
 .front .main-title {
   left: -1000em;
   position: absolute;
@@ -1081,6 +1079,45 @@ p .beefy-button.orange:active {
   display: inline-block;
   font-family: "FontAwesome";
   position: absolute;
+}
+
+/* Utility menus */
+/* line 137, ../scss/partials/components/_menus.scss */
+.utility-menu {
+  list-style: none;
+  text-align: center;
+}
+/* line 140, ../scss/partials/components/_menus.scss */
+.utility-menu__jump-link {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+}
+/* line 145, ../scss/partials/components/_menus.scss */
+.utility-menu__jump-link.bk-to-top {
+  font-size: .95em;
+  padding: 60px 0 0;
+}
+/* line 151, ../scss/partials/components/_menus.scss */
+.utility-menu__jump-link a {
+  text-transform: uppercase;
+}
+/* line 153, ../scss/partials/components/_menus.scss */
+.utility-menu__jump-link a:before {
+  color: #b7b7b7;
+  content: "";
+  display: inline-block;
+  font-family: "FontAwesome";
+  position: absolute;
+  font-size: 2em;
+  font-weight: bold;
+  bottom: 10px;
+  width: 100%;
+}
+/* line 161, ../scss/partials/components/_menus.scss */
+.utility-menu__jump-link a:link, .utility-menu__jump-link a:visited, .utility-menu__jump-link a:hover, .utility-menu__jump-link a:active {
+  color: #b7b7b7;
 }
 
 /* TODO: convert typography defaults to Sass maps/function */

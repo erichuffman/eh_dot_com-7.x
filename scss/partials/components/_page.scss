@@ -75,12 +75,7 @@
   }
 }
 /* Footer */
-.structure__footer {
-  // >= ~600px
-  @media only screen and (min-width: $smtab_portrait_max) {
-    padding-bottom: 600px;
-  }
-}
+.structure__footer {  position: relative; }
 
 /* Front Page specific styling */
 .front {

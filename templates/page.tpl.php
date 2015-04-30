@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="structure__main-wrapper">
+<div class="structure__main-wrapper" id="top">
   
   <header class="structure__header structure-wrap">
     <nav class="primary-menu-wrapper">
