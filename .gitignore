@@ -1,0 +1,8 @@
+# MacOS 
+.DS_Store
+
+# Phpstorm
+.idea
+
+# Sass caches
+.sass-cache

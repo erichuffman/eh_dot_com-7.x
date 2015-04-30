@@ -1,0 +1,10 @@
+// @file: mixins/functions
+
+@mixin fa-insert($color, $icon, $position) {
+  color: $color;
+  content: $icon; 
+  display: inline-block;
+  font-family: $f_font_awesome;
+  position: $position;
+  @content;
+}

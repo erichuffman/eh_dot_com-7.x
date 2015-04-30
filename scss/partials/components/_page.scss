@@ -1,0 +1,93 @@
+// @file: page structure
+
+.row {
+  margin: 0 auto;
+  max-width: $row_width;
+  padding: .5px 20px;
+}
+
+/* header */
+.identity-wrapper {
+  background-color: $steel_blue;
+  .main-site-name {
+    margin: 0;
+    a {
+      background: url("../images/DogThatAteYourBirthdayCake-HOWDY.png") no-repeat center center / contain transparent;
+      display: block;
+      height: 0px;
+      overflow: hidden;
+      margin-top: 1em;
+      padding: 5em 0 0 0;
+      &:link, &:visited { border: none; }
+      // >= ~600px
+      @media only screen and (min-width: $smtab_portrait_max) {
+        margin-top: 1em;
+        padding: 6.5em 0 0 0;
+      }
+    }
+  }
+}
+.main-content-wrapper,
+.aside-left-wrapper,
+.aside-right-wrapper {
+  float: left;
+  width: 100%;
+}
+.main-content-wrapper {
+  .main-content { padding: 10px 0 0; }
+  // >= ~600px
+  @media only screen and (min-width: $smtab_portrait_max) {
+    .main-content { padding: 20px 0 0; }
+    .with-aside-left.aside-count-one & {
+      margin-left: 30%;
+      margin-right: -100%;
+      padding-left: 10px;
+      width: 70%;
+    }
+    .with-aside-right.aside-count-one & {
+      margin-right: -30%;
+      padding-right: 10px;
+      width: 70%;
+    }
+    .aside-count-two & {
+      margin-left: 25%;
+      margin-right: -75%;
+      padding: 0 10px;
+      width: 50%;
+    }
+  }
+}
+.aside-left-wrapper {
+  // >= ~600px
+  @media only screen and (min-width: $smtab_portrait_max) {
+    padding-right: 10px;
+    width: 30%;
+    .aside-count-two & { width: 25%; }
+  }
+}
+.aside-right-wrapper {
+  // >= ~600px
+  @media only screen and (min-width: $smtab_portrait_max) {
+    float: right;
+    padding-left: 10px;
+    width: 30%;
+    .aside-count-two & { width: 25%; }
+  }
+}
+/* Footer */
+.structure__footer {
+  // >= ~600px
+  @media only screen and (min-width: $smtab_portrait_max) {
+    padding-bottom: 600px;
+  }
+}
+
+/* Front Page specific styling */
+.front {
+  .main-title { 
+    left: -1000em;
+    position: absolute;
+    visibility: hidden;
+  }
+}
+

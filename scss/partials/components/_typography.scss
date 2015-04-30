@@ -1,0 +1,18 @@
+// @file: typographic customizations
+
+/* TODO: convert typography defaults to Sass maps/function */
+
+.steroid-text { font-size: 1.25em; }
+h3.steroid-text { font-size: 2.125em; }
+h4.steroid-text { font-size: 1.75em; }
+h5.steroid-text { font-size: 1.5em; }
+h6.steroid-text { font-size: 1.25em; }
+
+// >= ~768px
+@media only screen and (min-width: $tab_portrait_max) {
+  .steroid-text { font-size: 1.375em; }
+  h3.steroid-text { font-size: 2.25em; }
+  h4.steroid-text { font-size: 1.875em; }
+  h5.steroid-text { font-size: 1.625em; }
+  h6.steroid-text { font-size: 1.5em; }
+}

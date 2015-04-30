@@ -1,0 +1,134 @@
+// @file: menu structure
+
+/* Main menu */
+.primary-menu-wrapper {
+  background-color: rgba(0,0,0,.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $z-mid;
+  @media only screen and (min-width: $smtab_portrait_max) {
+    text-align: center;
+    .admin-menu & { top: 15px; }
+  }
+  .row { padding: 0; }
+  .block-title-wrapper {
+    text-align: right;
+    padding: .5em 20px;
+    h4 {
+      color: #fff;
+      height: 0;
+      margin: 0;
+      overflow: hidden;
+      padding: 30px 0 0 0;
+      position: relative;
+    }
+    h4:before {
+      cursor: pointer;
+      @include fa-insert(#fff, $fa-var-list, absolute);
+      right: 0;
+      top: 0;
+    }
+    @media only screen and (min-width: $smtab_portrait_max) {
+      display: none;
+    }
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    list-style: none;
+    overflow: hidden;
+    &.opened {
+      border-top: 1px solid lighten(#000, 30%);
+      height: auto;
+      overflow: show;
+    }
+    @media only screen and (min-width: $smtab_portrait_max) {
+      display: inline;
+    }
+  }
+  .leaf {
+    background-color: lighten(#000, 30%);
+    margin: 0 0 1px;
+    padding: 0;
+    @media only screen and (min-width: $smtab_portrait_max) {
+      background-color: transparent;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      &:after {
+        @include fa-insert(#000, $fa-var-caret-up, absolute) {
+          bottom: 0;
+          height: 1em;
+          left: 0;
+          text-align: center;
+          width: 100%;
+          z-index: $z_neg;
+        }
+      }
+      &.active:after {
+        @include fa-insert(lighten(#000, 75%), $fa-var-caret-up, absolute) {
+          bottom: 0;
+          font-size: 1.2em;
+          height: 1em;
+          left: 0;
+          text-align: center;
+          @include transition(all, .5s, .5s, ease-out);
+          width: 100%;
+          z-index: $z_neg;
+        }
+      }
+    }
+  }
+  .leaf a {
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    &:link, &:visited {
+      border: none;
+      color: rgba(#fff,.75);
+    }
+    &:hover, &:active {
+      border: none;
+      color: #fff;
+    }
+  }
+}
+
+/* SM links menu */
+.menu__sm-links {
+  list-style: none;
+  margin: 0;
+  padding: 2em 0;
+  text-align: center;
+  .menu-item {
+    display: inline-block;
+    margin: 5px 20px;
+    padding: 0;
+    position: relative;
+    a {
+      display: inline-block;
+      height: 0;
+      overflow: hidden;
+      padding: 50px 0 0 0;
+      width: 50px;
+    }
+    a:after {
+      bottom: 0;
+      font-size: 2.5em;
+      height: 1em;
+      left: 0;
+      text-align: center;
+      width: 100%;
+    }
+    &.twitter a:after { @include fa-insert($light_gray, $fa-var-twitter, absolute) }
+    &.linkedin a:after { @include fa-insert($light_gray, $fa-var-linkedin, absolute) }
+    &.dribbble a:after { @include fa-insert($light_gray, $fa-var-dribbble, absolute) }
+    &.github a:after { @include fa-insert($light_gray, $fa-var-github, absolute) }
+    &.drupal a:after { @include fa-insert($light_gray, $fa-var-drupal, absolute) }
+  }
+}

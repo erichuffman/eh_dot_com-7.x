@@ -1,0 +1,28 @@
+// @file: general styling for admin views
+
+/* Various <ul> styles */
+.item-list ul {
+  @extend ul;
+  li {
+    @extend li;
+  }
+}
+ul.primary {
+  margin: 1em 0;
+  li {
+    margin: 0 .25em;
+    padding: 0; 
+  }
+  li a { @include border-radius(5px 5px 0 0); } 
+}
+
+/* Contextual links */
+a.contextual-links-trigger, .contextual-links li a {
+  &:link, &:visited, &:hover, &:active {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+/* CKEditor */
+body.cke_editable { padding: 10px; }

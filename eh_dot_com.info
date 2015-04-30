@@ -1,0 +1,20 @@
+screenshot  = screenshot.png
+name        = erichuffman.com theme
+description = A responsive theme for erichuffman.com
+
+core        = 7.x
+
+stylesheets[all][]  = css/base.css
+
+scripts[] = js/base.js
+
+regions[sticky_menu] = Header menu - stays fixed at top in desktop views
+regions[help] = Site help content
+regions[left_sidebar] = Left sidebar
+regions[main_top] = Area above main content output
+regions[content] = Main content
+regions[main_bottom] = Area below main content output
+regions[right_sidebar] = Right sidebar 
+regions[footer] = Footer
+
+version = "7.x-1.0"
