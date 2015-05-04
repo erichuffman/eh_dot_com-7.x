@@ -629,7 +629,7 @@ img {
 .style-inline__float.clear-both {
   clear: both;
 }
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   /* line 104, ../scss/partials/global/_defaults.scss */
   .style-inline__float.left, .style-inline__float.left-25, .style-inline__float.left-33, .style-inline__float.left-50, .style-inline__float.left-66, .style-inline__float.left-75 {
     float: left;
@@ -661,7 +661,7 @@ img {
     width: 75%;
   }
 }
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 800px) {
   /* line 120, ../scss/partials/global/_defaults.scss */
   .style-inline__float.left, .style-inline__float.left-25, .style-inline__float.left-33, .style-inline__float.left-50, .style-inline__float.left-66, .style-inline__float.left-75 {
     padding: 0 20px 20px 0;
@@ -746,7 +746,7 @@ p .beefy-button.orange:active {
 /* line 3, ../scss/partials/components/_page.scss */
 .row {
   margin: 0 auto;
-  max-width: 67.5em;
+  max-width: 1280px;
   padding: .5px 20px;
 }
 
@@ -772,7 +772,7 @@ p .beefy-button.orange:active {
 .identity-wrapper .main-site-name a:link, .identity-wrapper .main-site-name a:visited {
   border: none;
 }
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   /* line 14, ../scss/partials/components/_page.scss */
   .identity-wrapper .main-site-name a {
     margin-top: 1em;
@@ -792,7 +792,7 @@ p .beefy-button.orange:active {
 .main-content-wrapper .main-content {
   padding: 10px 0 0;
 }
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   /* line 40, ../scss/partials/components/_page.scss */
   .main-content-wrapper .main-content {
     padding: 20px 0 0;
@@ -819,7 +819,7 @@ p .beefy-button.orange:active {
   }
 }
 
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   /* line 60, ../scss/partials/components/_page.scss */
   .aside-left-wrapper {
     padding-right: 10px;
@@ -831,7 +831,7 @@ p .beefy-button.orange:active {
   }
 }
 
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   /* line 68, ../scss/partials/components/_page.scss */
   .aside-right-wrapper {
     float: right;
@@ -875,7 +875,7 @@ p .beefy-button.orange:active {
   width: 100%;
   z-index: 500;
 }
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   /* line 4, ../scss/partials/components/_menus.scss */
   .primary-menu-wrapper {
     text-align: center;
@@ -914,7 +914,7 @@ p .beefy-button.orange:active {
   right: 0;
   top: 0;
 }
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   /* line 15, ../scss/partials/components/_menus.scss */
   .primary-menu-wrapper .block-title-wrapper {
     display: none;
@@ -934,7 +934,7 @@ p .beefy-button.orange:active {
   height: auto;
   overflow: show;
 }
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   /* line 36, ../scss/partials/components/_menus.scss */
   .primary-menu-wrapper .menu {
     display: inline;
@@ -946,7 +946,7 @@ p .beefy-button.orange:active {
   margin: 0 0 1px;
   padding: 0;
 }
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   /* line 51, ../scss/partials/components/_menus.scss */
   .primary-menu-wrapper .leaf {
     background-color: transparent;
@@ -1147,7 +1147,7 @@ h6.steroid-text {
   font-size: 1.25em;
 }
 
-@media only screen and (min-width: 48em) {
+@media (min-width: 48em) {
   /* line 13, ../scss/partials/components/_typography.scss */
   .steroid-text {
     font-size: 1.375em;
